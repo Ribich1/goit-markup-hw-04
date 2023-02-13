@@ -230,6 +230,9 @@ line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.border > .item {
+  margin-bottom: 0;
+}
 
 .link {
   color: var(--accent-txt-cl);
@@ -309,7 +312,7 @@ line-height: 24px; */
 }
 .logo {
   display: block;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 
   /* IRIS */
 
@@ -383,7 +386,11 @@ line-height: 24px; */
 .feature-icons {
 }
 .feature-wrap {
-  padding: 24px 100px;
+  display: flex;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  /* padding: 24px 100px; */
   margin-bottom: 8px;
   background-color: var(--light-bg-cl);
 }
@@ -453,11 +460,17 @@ img {
   border-bottom: 1px solid var(--border-cl);
   border-left: 1px solid var(--border-cl);
 }
-.border:focus,
-.border:hover {
+
+.link-wrap:hover,
+.link-wrap:focus {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
   box-shadow: 0 1px 1px 0 rgba(46, 47, 66, 0.16);
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.link-block {
+  display: block;
+}
+.link-wrap {
 }
 
 .overlay {
@@ -485,6 +498,7 @@ img {
 }
 .footer-item {
   margin-top: 0;
+  margin-bottom: 16px;
 
   color: var(--btn-txt-cl);
   font-weight: 500;
